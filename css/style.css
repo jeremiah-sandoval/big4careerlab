@@ -3,6 +3,7 @@
 body{
   background-color: #efefef;
   font-family: 'Montserrat', sans-serif;
+  color: #333;
 }
 p{
   margin: 0;
@@ -128,15 +129,57 @@ a:hover{
 .chapter-contents .title-header{
   border: 0px;
 }
-
+footer{
+  margin-top: 200px;
+}
+footer .top{
+  position: relative;
+  height: 200px;
+}
+footer .top .newsletter{
+  position: relative;
+}
+footer .top .newsletter-container{
+  position: absolute;
+  top: -100;
+  left: 0;
+}
+footer .top .newsletter-container img{
+  position: absolute;
+  right: 0;
+  top: -90px;
+  width: 25%;
+  z-index: 99999;
+}
+footer .top .newsletter-content{
+  width: 75%;
+}
+footer .top .newsletter-content h3{
+  font-size: 36px;
+  font-weight: 700;
+}
+footer .top .form-container button{
+  width: 100%;
+}
+footer .top .footer-links ul{
+  list-style: none;
+}
+footer .top .footer-links ul li{
+  padding: 5px 0;
+}
+footer .top .footer-links ul li a{
+  color: #333;
+}
 footer .bottom{
   text-align: right;
+  border-top: 1px solid #efefef;
 }
 footer .bottom .social-links,
 footer .bottom p.copyright{
   display: inline-block;
   list-style: none;
   margin: 0;
+  padding: 0 5px;
 }
 footer .bottom .social-links li{
   display: inline-block;
@@ -172,14 +215,37 @@ footer .bottom .social-links li a{
 
 }
 
-@media (min-width: 768px) {
+@media(min-width: 768px){
 
+}
+
+@media (max-width: 767px) {
+  footer{
+    margin-top: 100px;
+  }
+  footer .top{
+    height: auto;
+  }
+  footer .top .newsletter-container{
+    position: initial;
+  }
+  footer .bottom{
+    text-align: center;
+  }
+  footer .bottom .social-links,
+  footer .bottom p.copyright{
+    display: block;
+    padding: 5px;
+  }
 }
 
 @media (max-width: 991px) {
   .container{
     max-width: 100%;
     width: 100%;
+  }
+  footer .top .newsletter-content h3{
+    font-size: 30px;
   }
 }
 @media (min-width: 992px) {
