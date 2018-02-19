@@ -61,6 +61,9 @@ a:hover{
 .blue2-bg{
   background-color: #3992C8;
 }
+.darkblue-bg{
+  background-color: #02182B;
+}
 .purple-bg{
   background-color: #540D6E;
 }
@@ -153,6 +156,15 @@ footer .bottom .social-links li:hover{
 footer .bottom .social-links li a{
   color: #fff;
 }
+.scrollup{
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 16px;
+  display: none;
+  z-index: 999;
 }
 
 
