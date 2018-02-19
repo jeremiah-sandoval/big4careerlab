@@ -163,6 +163,8 @@ footer .top .form-container button{
 }
 footer .top .footer-links ul{
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 footer .top .footer-links ul li{
   padding: 5px 0;
@@ -211,15 +213,11 @@ footer .bottom .social-links li a{
 }
 
 
-@media (min-width: 576px) {
-
-}
-
-@media(min-width: 768px){
-
-}
-
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+  .container{
+    max-width: 100%;
+    width: 100%;
+  }
   footer{
     margin-top: 100px;
   }
@@ -229,6 +227,9 @@ footer .bottom .social-links li a{
   footer .top .newsletter-container{
     position: initial;
   }
+  footer .top .footer-links{
+    text-align: center;
+  }
   footer .bottom{
     text-align: center;
   }
@@ -236,16 +237,6 @@ footer .bottom .social-links li a{
   footer .bottom p.copyright{
     display: block;
     padding: 5px;
-  }
-}
-
-@media (max-width: 991px) {
-  .container{
-    max-width: 100%;
-    width: 100%;
-  }
-  footer .top .newsletter-content h3{
-    font-size: 30px;
   }
 }
 @media (min-width: 992px) {
@@ -257,6 +248,8 @@ footer .bottom .social-links li a{
 
 }
 
-@media (min-width: 1200px) {
-
+@media (max-width: 1199px) {
+  footer .top .newsletter-content h3{
+    font-size: 30px;
+  }
 }
